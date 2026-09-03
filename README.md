@@ -1,2 +1,180 @@
-# Portofolia-M.Bagas-Setyo-Prathama
-this is a portfolio about me personally.
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio | Software Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0f172a',
+                        cardBg: '#1e293b',
+                        accent: '#38bdf8',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-darkBg text-slate-100 font-sans antialiased selection:bg-accent selection:text-darkBg">
+
+    <header class="fixed top-0 left-0 w-full bg-darkBg/80 backdrop-blur-md z-50 border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold tracking-wider text-accent">&lt;Dev/Portfolio&gt;</a>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-accent transition">Tentang</a>
+                <a href="#skills" class="hover:text-accent transition">Keahlian</a>
+                <a href="#projects" class="hover:text-accent transition">Proyek</a>
+                <a href="#contact" class="hover:text-accent transition">Kontak</a>
+            </nav>
+            <a href="#contact" class="hidden md:inline-block px-4 py-2 text-xs font-semibold uppercase tracking-wider text-accent border border-accent rounded hover:bg-accent hover:text-darkBg transition">Hubungi Saya</a>
+        </div>
+    </header>
+
+    <section class="min-h-screen flex items-center justify-center max-w-6xl mx-auto px-6 pt-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <div class="inline-flex items-center space-x-2 px-3 py-1 bg-slate-800/80 border border-slate-700 rounded-full text-xs text-accent">
+                    <span class="w-2 h-2 rounded-full bg-accent animate-pulse"></span>
+                    <span>Terbuka untuk Peluang Baru</span>
+                </div>
+                <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight">
+                    Halo, Saya <span class="text-accent">Nama Anda</span>
+                </h1>
+                <p class="text-xl font-medium text-slate-400">Software Engineer & Full-Stack Developer</p>
+                <p class="text-slate-400 leading-relaxed">
+                    Saya berfokus membangun aplikasi web yang handal, efisien, dan memberikan pengalaman pengguna yang luar biasa menggunakan teknologi modern.
+                </p>
+                <div class="flex space-x-4 pt-2">
+                    <a href="#projects" class="px-6 py-3 bg-accent text-darkBg font-semibold rounded-lg hover:bg-sky-400 transition shadow-lg shadow-sky-500/20">Lihat Proyek</a>
+                    <a href="#contact" class="px-6 py-3 border border-slate-700 rounded-lg hover:border-accent hover:text-accent transition">Let's Connect</a>
+                </div>
+            </div>
+            <div class="relative flex justify-center">
+                <div class="w-72 h-72 md:w-80 md:h-80 bg-gradient-to-tr from-sky-500 to-indigo-500 rounded-2xl rotate-3 absolute filter blur-xl opacity-30 animate-pulse"></div>
+                <div class="w-72 h-72 md:w-80 md:h-80 bg-cardBg border border-slate-700 rounded-2xl p-6 flex flex-col justify-between relative shadow-2xl">
+                    <div class="flex items-center space-x-2 border-b border-slate-700 pb-4">
+                        <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                        <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                        <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                        <span class="text-xs text-slate-500 ml-2">developer.js</span>
+                    </div>
+                    <div class="font-mono text-xs text-slate-300 space-y-2">
+                        <p><span class="text-purple-400">const</span> developer = &#123;</p>
+                        <p class="pl-4">name: <span class="text-green-400">"Nama Anda"</span>,</p>
+                        <p class="pl-4">role: <span class="text-green-400">"Software Engineer"</span>,</p>
+                        <p class="pl-4">stack: [<span class="text-green-400">"React"</span>, <span class="text-green-400">"Node.js"</span>, <span class="text-green-400">"Python"</span>]</p>
+                        <p>&#125;;</p>
+                    </div>
+                    <div class="text-xs text-slate-500 text-right">Status: Ready to Code</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-24 max-w-6xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold tracking-tight">Keahlian & Teknologi</h2>
+            <p class="text-slate-400 mt-2">Alat dan bahasa pemrograman yang biasa saya gunakan.</p>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div class="bg-cardBg border border-slate-800 p-6 rounded-xl text-center hover:border-accent transition group">
+                <i class="fa-brands fa-js text-4xl text-yellow-400 mb-4 group-hover:scale-110 transition"></i>
+                <h3 class="font-semibold text-slate-200">JavaScript / TypeScript</h3>
+                <p class="text-xs text-slate-500 mt-1">Frontend & Backend</p>
+            </div>
+            <div class="bg-cardBg border border-slate-800 p-6 rounded-xl text-center hover:border-accent transition group">
+                <i class="fa-brands fa-react text-4xl text-sky-400 mb-4 group-hover:scale-110 transition"></i>
+                <h3 class="font-semibold text-slate-200">React / Next.js</h3>
+                <p class="text-xs text-slate-500 mt-1">Modern UI Framework</p>
+            </div>
+            <div class="bg-cardBg border border-slate-800 p-6 rounded-xl text-center hover:border-accent transition group">
+                <i class="fa-brands fa-node text-4xl text-green-500 mb-4 group-hover:scale-110 transition"></i>
+                <h3 class="font-semibold text-slate-200">Node.js / Express</h3>
+                <p class="text-xs text-slate-500 mt-1">RESTful APIs</p>
+            </div>
+            <div class="bg-cardBg border border-slate-800 p-6 rounded-xl text-center hover:border-accent transition group">
+                <i class="fa-solid fa-database text-4xl text-indigo-400 mb-4 group-hover:scale-110 transition"></i>
+                <h3 class="font-semibold text-slate-200">SQL & NoSQL</h3>
+                <p class="text-xs text-slate-500 mt-1">PostgreSQL, MongoDB</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-24 max-w-6xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold tracking-tight">Proyek Unggulan</h2>
+            <p class="text-slate-400 mt-2">Beberapa karya terbaik yang pernah saya kembangkan.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-cardBg border border-slate-800 rounded-xl overflow-hidden hover:border-slate-700 transition flex flex-col justify-between">
+                <div class="p-6 space-y-4">
+                    <div class="flex justify-between items-center">
+                        <i class="fa-regular fa-folder-closed text-2xl text-accent"></i>
+                        <div class="space-x-3 text-slate-400">
+                            <a href="#" class="hover:text-accent"><i class="fa-brands fa-github text-lg"></i></a>
+                            <a href="#" class="hover:text-accent"><i class="fa-solid fa-arrow-up-right-from-square text-sm"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-100">Sistem E-Commerce</h3>
+                    <p class="text-sm text-slate-400">Platform belanja online lengkap dengan sistem pembayaran terintegrasi dan manajemen inventaris.</p>
+                </div>
+                <div class="px-6 py-4 bg-slate-900/50 border-t border-slate-800 flex space-x-2 text-xs text-slate-400 font-mono">
+                    <span>React</span><span>•</span><span>Node.js</span><span>•</span><span>PostgreSQL</span>
+                </div>
+            </div>
+            <div class="bg-cardBg border border-slate-800 rounded-xl overflow-hidden hover:border-slate-700 transition flex flex-col justify-between">
+                <div class="p-6 space-y-4">
+                    <div class="flex justify-between items-center">
+                        <i class="fa-regular fa-folder-closed text-2xl text-accent"></i>
+                        <div class="space-x-3 text-slate-400">
+                            <a href="#" class="hover:text-accent"><i class="fa-brands fa-github text-lg"></i></a>
+                            <a href="#" class="hover:text-accent"><i class="fa-solid fa-arrow-up-right-from-square text-sm"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-100">Aplikasi Task Management</h3>
+                    <p class="text-sm text-slate-400">Aplikasi manajemen tugas kolaboratif secara real-time untuk meningkatkan produktivitas tim.</p>
+                </div>
+                <div class="px-6 py-4 bg-slate-900/50 border-t border-slate-800 flex space-x-2 text-xs text-slate-400 font-mono">
+                    <span>Next.js</span><span>•</span><span>Tailwind</span><span>•</span><span>Firebase</span>
+                </div>
+            </div>
+            <div class="bg-cardBg border border-slate-800 rounded-xl overflow-hidden hover:border-slate-700 transition flex flex-col justify-between">
+                <div class="p-6 space-y-4">
+                    <div class="flex justify-between items-center">
+                        <i class="fa-regular fa-folder-closed text-2xl text-accent"></i>
+                        <div class="space-x-3 text-slate-400">
+                            <a href="#" class="hover:text-accent"><i class="fa-brands fa-github text-lg"></i></a>
+                            <a href="#" class="hover:text-accent"><i class="fa-solid fa-arrow-up-right-from-square text-sm"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-100">AI Chatbot Dashboard</h3>
+                    <p class="text-sm text-slate-400">Dashboard analitik untuk memantau performa dan riwayat interaksi chatbot berbasis kecerdasan buatan.</p>
+                </div>
+                <div class="px-6 py-4 bg-slate-900/50 border-t border-slate-800 flex space-x-2 text-xs text-slate-400 font-mono">
+                    <span>Python</span><span>•</span><span>Flask</span><span>•</span><span>React</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 max-w-4xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold tracking-tight">Mari Berkolaborasi!</h2>
+        <p class="text-slate-400 mt-2 max-w-lg mx-auto">Punya proyek menarik atau ingin merekrut saya? Jangan ragu untuk mengirim pesan.</p>
+        <div class="mt-8 flex justify-center space-x-6 text-2xl text-slate-300">
+            <a href="https://github.com/usernameanda" target="_blank" class="hover:text-accent transition"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com/in/usernameanda" target="_blank" class="hover:text-accent transition"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="mailto:emailanda@example.com" class="hover:text-accent transition"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+    </section>
+
+    <footer class="py-6 border-t border-slate-800 text-center text-xs text-slate-500">
+        <p>&copy; 2026 Nama Anda. Built with Tailwind CSS & GitHub Pages.</p>
+    </footer>
+
+</body>
+</html>
